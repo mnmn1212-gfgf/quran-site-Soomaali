@@ -700,15 +700,15 @@ function IdentityCard({ icon: Icon, title, text, large = false, isMobile }) {
   return (
     <motion.div
       whileHover={isMobile ? {} : { y: -6, scale: 1.01 }}
-      className={`${softCard} h-full p-4 sm:p-5`}
+      className="h-full rounded-[2.2rem] border border-sky-200/18 bg-[linear-gradient(135deg,#16213E_0%,#1B3B6F_58%,#7DD3FC_100%)] p-4 shadow-[0_20px_50px_rgba(5,10,25,0.32)] sm:p-5"
     >
-      <div className="h-full rounded-[1.5rem] border border-white/10 bg-[linear-gradient(135deg,rgba(22,33,62,0.52)_0%,rgba(27,59,111,0.36)_60%,rgba(125,211,252,0.16)_100%)] p-4">
-        <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-gradient-to-l from-white/5 to-white/10 px-4 py-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-[rgba(125,211,252,0.10)]">
+      <div className="h-full rounded-[1.9rem] border border-sky-200/14 bg-[linear-gradient(135deg,rgba(24,49,90,0.92)_0%,rgba(35,74,130,0.78)_58%,rgba(105,184,229,0.52)_100%)] p-4 sm:p-5">
+        <div className="flex items-center gap-3 rounded-[1.35rem] border border-sky-200/14 bg-[linear-gradient(135deg,rgba(58,81,111,0.94)_0%,rgba(68,101,142,0.92)_55%,rgba(78,127,176,0.90)_100%)] px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-sky-200/16 bg-[linear-gradient(135deg,rgba(70,96,132,0.92)_0%,rgba(88,124,168,0.88)_100%)]">
             <Icon className="h-5 w-5" style={{ color: ACCENT }} />
           </div>
           <div
-            className={`rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(22,33,62,0.52)_0%,rgba(27,59,111,0.36)_60%,rgba(125,211,252,0.16)_100%)] px-4 py-2 font-bold text-white ${
+            className={`rounded-2xl border border-sky-200/14 bg-[linear-gradient(135deg,rgba(52,74,106,0.96)_0%,rgba(66,96,138,0.92)_100%)] px-4 py-2 font-bold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] ${
               large ? "text-lg sm:text-xl" : "text-base sm:text-lg"
             }`}
           >
@@ -716,7 +716,7 @@ function IdentityCard({ icon: Icon, title, text, large = false, isMobile }) {
           </div>
         </div>
         <div
-          className={`mt-4 rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(19,34,60,0.96)_0%,rgba(27,59,111,0.72)_100%)] px-4 py-4 text-white/80 ${
+          className={`mt-4 rounded-[1.35rem] border border-sky-200/12 bg-[linear-gradient(135deg,#152746_0%,#1B3157_52%,#22456F_100%)] px-4 py-4 text-white/80 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] ${
             large
               ? "text-base leading-8 sm:text-lg sm:leading-9 lg:text-xl lg:leading-10"
               : "text-base leading-8 sm:text-lg"
