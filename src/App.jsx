@@ -58,13 +58,6 @@ const pulseGlow = {
   transition: { duration: 6, repeat: Infinity, ease: "easeInOut" },
 };
 
-const containerClass =
-  "relative z-10 mx-auto w-full max-w-[1680px] px-4 sm:px-6 lg:px-10 xl:px-14";
-const glass =
-  `border border-sky-200/15 ${FRAME_GLASS} md:backdrop-blur-xl backdrop-blur-sm shadow-[0_18px_40px_rgba(6,12,28,0.34)]`;
-const softCard = `rounded-[2rem] ${glass}`;
-const gradientOuterCard = `rounded-[2rem] border border-white/10 ${OUTER_GRADIENT} md:backdrop-blur-xl backdrop-blur-sm shadow-[0_8px_22px_rgba(0,0,0,0.14)]`;
-
 const FRAME_GLASS =
   "bg-[linear-gradient(135deg,rgba(22,33,62,0.82)_0%,rgba(27,59,111,0.62)_58%,rgba(125,211,252,0.26)_100%)]";
 const FRAME_GLASS_SOFT =
@@ -79,6 +72,13 @@ const DARK_PANEL_SOFT =
   "bg-[linear-gradient(135deg,rgba(11,18,32,0.56)_0%,rgba(22,33,62,0.36)_100%)]";
 const SMALL_GLASS =
   "border border-white/10 bg-[linear-gradient(135deg,rgba(22,33,62,0.32)_0%,rgba(27,59,111,0.22)_58%,rgba(125,211,252,0.14)_100%)] backdrop-blur-xl shadow-[0_10px_26px_rgba(7,14,30,0.22)]";
+
+const containerClass =
+  "relative z-10 mx-auto w-full max-w-[1680px] px-4 sm:px-6 lg:px-10 xl:px-14";
+const glass =
+  `border border-sky-200/15 ${FRAME_GLASS} md:backdrop-blur-xl backdrop-blur-sm shadow-[0_18px_40px_rgba(6,12,28,0.34)]`;
+const softCard = `rounded-[2rem] ${glass}`;
+const gradientOuterCard = `rounded-[2rem] border border-white/10 ${OUTER_GRADIENT} md:backdrop-blur-xl backdrop-blur-sm shadow-[0_8px_22px_rgba(0,0,0,0.14)]`;
 
 const navItems = [
   { label: "Nagu saabsan", href: "#about" },
@@ -591,7 +591,7 @@ function HeroAudioPlayer({ isMobile }) {
         <button
           type="button"
           onClick={togglePlay}
-          className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:${FRAME_GLASS_SOFT}`}
+          className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
           aria-label={isPlaying ? "Hakinta" : "Shidid"}
         >
           {isPlaying ? (
@@ -604,7 +604,7 @@ function HeroAudioPlayer({ isMobile }) {
         <button
           type="button"
           onClick={() => seekBy(-10)}
-          className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:${FRAME_GLASS_SOFT}`}
+          className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
           aria-label="Dib u celin"
         >
           <SkipBack className="h-4 w-4" style={{ color: ACCENT }} />
@@ -613,7 +613,7 @@ function HeroAudioPlayer({ isMobile }) {
         <button
           type="button"
           onClick={replay}
-          className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:${FRAME_GLASS_SOFT}`}
+          className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
           aria-label="Dib u shidid"
         >
           <RotateCcw className="h-4 w-4" style={{ color: ACCENT }} />
@@ -622,7 +622,7 @@ function HeroAudioPlayer({ isMobile }) {
         <button
           type="button"
           onClick={() => seekBy(10)}
-          className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:${FRAME_GLASS_SOFT}`}
+          className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
           aria-label="Hore u socod"
         >
           <SkipForward className="h-4 w-4" style={{ color: ACCENT }} />
@@ -631,7 +631,7 @@ function HeroAudioPlayer({ isMobile }) {
         <button
           type="button"
           onClick={toggleMute}
-          className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:${FRAME_GLASS_SOFT}`}
+          className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
           aria-label="Cod"
         >
           <Volume2
@@ -924,7 +924,7 @@ function ProtectedHlsVideoCard({
           <button
             type="button"
             onClick={toggleMute}
-            className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:${FRAME_GLASS_SOFT}`}
+            className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
             aria-label="Aamusi ama daar codka"
           >
             <Volume2
@@ -936,7 +936,7 @@ function ProtectedHlsVideoCard({
           <button
             type="button"
             onClick={replayVideo}
-            className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:${FRAME_GLASS_SOFT}`}
+            className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
             aria-label="Dib u shidid"
           >
             <RotateCcw className="h-4 w-4" style={{ color: ACCENT }} />
@@ -945,7 +945,7 @@ function ProtectedHlsVideoCard({
           <button
             type="button"
             onClick={togglePlay}
-            className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:${FRAME_GLASS_SOFT}`}
+            className={`flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 ${CARD_GLASS} text-white transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
             aria-label={isPlaying ? "Hakinta" : "Shidid"}
           >
             {isPlaying ? (
@@ -1072,7 +1072,7 @@ export default function QuranTranslationLandingPage() {
                   <a
                     key={item.href}
                     href={item.href}
-                    className={`rounded-full border border-white/10 ${CARD_GLASS} px-4 py-2 text-sm font-medium text-white/85 transition hover:border-sky-200/30 hover:${FRAME_GLASS_SOFT} hover:text-sky-100`}
+                    className={`rounded-full border border-white/10 ${CARD_GLASS} px-4 py-2 text-sm font-medium text-white/85 transition hover:border-sky-200/30 hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)] hover:text-sky-100`}
                   >
                     {item.label}
                   </a>
@@ -1640,7 +1640,7 @@ export default function QuranTranslationLandingPage() {
                   <div className="w-full space-y-4 text-white/72">
                     <a
                       href="mailto:snachannel159@gmail.com"
-                      className={`flex items-center justify-center gap-3 break-all rounded-2xl border border-white/10 ${DARK_PANEL} px-4 py-3 text-sm transition hover:${FRAME_GLASS_SOFT} sm:text-base`}
+                      className={`flex items-center justify-center gap-3 break-all rounded-2xl border border-white/10 ${DARK_PANEL} px-4 py-3 text-sm transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)] sm:text-base`}
                     >
                       <Mail className="h-4 w-4 shrink-0" style={{ color: ACCENT }} />
                       snachannel159@gmail.com
@@ -1657,7 +1657,7 @@ export default function QuranTranslationLandingPage() {
                       href="https://www.facebook.com/profile.php?id=61575131804154"
                       target="_blank"
                       rel="noreferrer"
-                      className={`flex items-center justify-center gap-2 rounded-xl border border-white/10 ${CARD_GLASS} py-3 text-sm font-semibold text-white transition hover:scale-[1.01] hover:${FRAME_GLASS_SOFT}`}
+                      className={`flex items-center justify-center gap-2 rounded-xl border border-white/10 ${CARD_GLASS} py-3 text-sm font-semibold text-white transition hover:scale-[1.01] hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
                     >
                       <Globe className="h-4 w-4" style={{ color: ACCENT }} />
                       Nagala soco Facebook
@@ -1687,7 +1687,7 @@ export default function QuranTranslationLandingPage() {
                         href="https://play.google.com/store/apps/details?id=com.sana_all&pcampaignid=web_share"
                         target="_blank"
                         rel="noreferrer"
-                        className={`group rounded-[1.3rem] border border-white/10 ${CARD_GLASS} p-4 transition hover:-translate-y-0.5 hover:${FRAME_GLASS_SOFT}`}
+                        className={`group rounded-[1.3rem] border border-white/10 ${CARD_GLASS} p-4 transition hover:-translate-y-0.5 hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
                       >
                         <div className="flex items-center justify-center gap-3">
                           <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-[rgba(125,211,252,0.10)] text-white">
@@ -1703,7 +1703,7 @@ export default function QuranTranslationLandingPage() {
                         href="https://apps.apple.com/us/app/sana-tv-%D8%B3%D9%86%D8%A7/id6742054715"
                         target="_blank"
                         rel="noreferrer"
-                        className={`group rounded-[1.3rem] border border-white/10 ${CARD_GLASS} p-4 transition hover:-translate-y-0.5 hover:${FRAME_GLASS_SOFT}`}
+                        className={`group rounded-[1.3rem] border border-white/10 ${CARD_GLASS} p-4 transition hover:-translate-y-0.5 hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
                       >
                         <div className="flex items-center justify-center gap-3">
                           <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-[rgba(125,211,252,0.08)] text-white">
