@@ -1600,7 +1600,7 @@ export default function QuranTranslationLandingPage() {
             <div className={`rounded-[2rem] px-4 py-6 sm:px-6 sm:py-8 lg:px-10 ${glass}`}>
               <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr_1fr]">
                 <div
-                  className={`rounded-[1.8rem] border border-white/10 p-4 text-center sm:p-6 ${INNER_GRADIENT} flex h-full flex-col items-center justify-center`}
+                  className={`rounded-[1.8rem] border border-white/10 p-4 text-center sm:p-6 ${FRAME_GLASS} flex h-full flex-col items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.18)]`}
                 >
                   <div className={`mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-white/15 ${FRAME_GLASS_SOFT} shadow-[0_0_18px_rgba(125,211,252,0.06)] backdrop-blur-md sm:h-24 sm:w-24`}>
                     <img
@@ -1613,7 +1613,7 @@ export default function QuranTranslationLandingPage() {
                   </div>
 
                   <div className="mt-4">
-                    <span className={`inline-flex rounded-full border border-white/10 ${FRAME_GLASS_SOFT} px-4 py-2 text-xs text-white/90 sm:px-5 sm:text-sm`}>
+                    <span className={`inline-flex rounded-full border border-white/10 bg-[linear-gradient(135deg,rgba(22,33,62,0.88)_0%,rgba(27,59,111,0.80)_52%,rgba(125,211,252,0.42)_100%)] px-4 py-2 text-xs text-white/90 sm:px-5 sm:text-sm`}>
                       Kanaallada Qur’aanka ee Sana
                     </span>
                   </div>
@@ -1622,14 +1622,14 @@ export default function QuranTranslationLandingPage() {
                     Sana... farriin u ah adduunyada
                   </div>
 
-                  <p className={`mx-auto mt-4 max-w-[30rem] rounded-[1.4rem] border border-white/10 ${DARK_PANEL} px-4 py-4 text-sm leading-7 text-white/78 sm:px-5 sm:text-base sm:leading-8`}>
+                  <p className={`mx-auto mt-4 max-w-[30rem] rounded-[1.4rem] border border-white/10 bg-[linear-gradient(135deg,rgba(15,28,51,0.98)_0%,rgba(22,33,62,0.93)_38%,rgba(27,59,111,0.82)_100%)] px-4 py-4 text-sm leading-7 text-white/78 sm:px-5 sm:text-base sm:leading-8`}>
                     Kanaallo maqal iyo muuqaal ah oo loogu talagalay tarjumaadaha macnayaasha Qur’aanka Kariimka ah ee dhammaan luuqadaha
                     caalamiga ah, mashruuc waqf ah oo isku dara quruxda bandhigga, saxnaanta macnaha iyo ruuxa
                     farriinta.
                   </p>
                 </div>
 
-                <div className={`rounded-[1.6rem] border border-white/10 ${CARD_GLASS} p-4 sm:p-5 flex flex-col items-center justify-center text-center`}>
+                <div className={`rounded-[1.6rem] border border-white/10 ${FRAME_GLASS} p-4 sm:p-5 flex flex-col items-center justify-center text-center shadow-[0_12px_30px_rgba(0,0,0,0.18)]`}>
                   <div className="mb-5 flex flex-col items-center justify-center gap-4 text-lg font-bold text-white sm:text-xl">
                     <div className={`flex h-14 w-14 items-center justify-center rounded-2xl shadow-[0_8px_18px_rgba(0,0,0,0.14)] ${SMALL_GLASS}`}>
                       <MessageCircle className="h-6 w-6" style={{ color: ACCENT }} />
@@ -1640,19 +1640,19 @@ export default function QuranTranslationLandingPage() {
                   <div className="w-full space-y-4 text-white/72">
                     <a
                       href="mailto:snachannel159@gmail.com"
-                      className={`flex items-center justify-center gap-3 break-all rounded-2xl border border-white/10 ${DARK_PANEL} px-4 py-3 text-sm transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)] sm:text-base`}
+                      className={`flex items-center justify-center gap-3 break-all rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(15,28,51,0.98)_0%,rgba(22,33,62,0.93)_38%,rgba(27,59,111,0.82)_100%)] px-4 py-3 text-sm transition hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)] sm:text-base`}
                     >
                       <Mail className="h-4 w-4 shrink-0" style={{ color: ACCENT }} />
                       snachannel159@gmail.com
                     </a>
 
-                    <div className={`flex items-center justify-center gap-3 rounded-2xl border border-white/10 ${DARK_PANEL} px-4 py-3 text-sm sm:text-base`}>
+                    <div className={`flex items-center justify-center gap-3 rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(15,28,51,0.98)_0%,rgba(22,33,62,0.93)_38%,rgba(27,59,111,0.82)_100%)] px-4 py-3 text-sm sm:text-base`}>
                       <MapPin className="h-4 w-4 shrink-0" style={{ color: ACCENT }} />
                       Cammaan - Urdun
                     </div>
                   </div>
 
-                  <div className={`mt-6 w-full rounded-[1.4rem] border border-white/10 ${DARK_PANEL} p-4`}>
+                  <div className={`mt-6 w-full rounded-[1.4rem] border border-white/10 bg-[linear-gradient(135deg,rgba(15,28,51,0.98)_0%,rgba(22,33,62,0.93)_38%,rgba(27,59,111,0.82)_100%)] p-4`}>
                     <a
                       href="https://www.facebook.com/profile.php?id=61575131804154"
                       target="_blank"
@@ -1669,7 +1669,7 @@ export default function QuranTranslationLandingPage() {
                   </div>
                 </div>
 
-                <div className={`rounded-[1.8rem] border border-white/10 ${FRAME_GLASS} p-4 backdrop-blur-md sm:p-5 flex flex-col items-center justify-center text-center`}>
+                <div className={`rounded-[1.8rem] border border-white/10 ${FRAME_GLASS} p-4 backdrop-blur-md sm:p-5 flex flex-col items-center justify-center text-center shadow-[0_12px_30px_rgba(0,0,0,0.18)]`}>
                   <div className="mb-5 flex flex-col items-center justify-center gap-4 text-lg font-bold text-white sm:text-xl">
                     <div className={`flex h-14 w-14 items-center justify-center rounded-2xl shadow-[0_8px_18px_rgba(0,0,0,0.14)] ${SMALL_GLASS}`}>
                       <Link2 className="h-6 w-6" style={{ color: ACCENT }} />
@@ -1677,7 +1677,7 @@ export default function QuranTranslationLandingPage() {
                     <span>Xiriirrada app-keenna</span>
                   </div>
 
-                  <div className={`w-full rounded-[1.4rem] border border-white/10 ${DARK_PANEL} p-4`}>
+                  <div className={`w-full rounded-[1.4rem] border border-white/10 bg-[linear-gradient(135deg,rgba(15,28,51,0.98)_0%,rgba(22,33,62,0.93)_38%,rgba(27,59,111,0.82)_100%)] p-4`}>
                     <p className="mb-4 text-sm leading-7 text-white/65">
                       Soo dejiso app-ka oo si fudud uga bilow la socodka nuxurka Qur’aanka iyada oo loo marayo madalaha rasmiga ah.
                     </p>
@@ -1687,7 +1687,7 @@ export default function QuranTranslationLandingPage() {
                         href="https://play.google.com/store/apps/details?id=com.sana_all&pcampaignid=web_share"
                         target="_blank"
                         rel="noreferrer"
-                        className={`group rounded-[1.3rem] border border-white/10 ${CARD_GLASS} p-4 transition hover:-translate-y-0.5 hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
+                        className={`group rounded-[1.3rem] border border-white/10 bg-[linear-gradient(135deg,rgba(22,33,62,0.60)_0%,rgba(27,59,111,0.48)_52%,rgba(125,211,252,0.24)_100%)] p-4 transition hover:-translate-y-0.5 hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.78)_0%,rgba(27,59,111,0.62)_52%,rgba(125,211,252,0.30)_100%)]`}
                       >
                         <div className="flex items-center justify-center gap-3">
                           <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-[rgba(125,211,252,0.10)] text-white">
@@ -1703,7 +1703,7 @@ export default function QuranTranslationLandingPage() {
                         href="https://apps.apple.com/us/app/sana-tv-%D8%B3%D9%86%D8%A7/id6742054715"
                         target="_blank"
                         rel="noreferrer"
-                        className={`group rounded-[1.3rem] border border-white/10 ${CARD_GLASS} p-4 transition hover:-translate-y-0.5 hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]`}
+                        className={`group rounded-[1.3rem] border border-white/10 bg-[linear-gradient(135deg,rgba(22,33,62,0.60)_0%,rgba(27,59,111,0.48)_52%,rgba(125,211,252,0.24)_100%)] p-4 transition hover:-translate-y-0.5 hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.78)_0%,rgba(27,59,111,0.62)_52%,rgba(125,211,252,0.30)_100%)]`}
                       >
                         <div className="flex items-center justify-center gap-3">
                           <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-[rgba(125,211,252,0.08)] text-white">
@@ -1726,7 +1726,7 @@ export default function QuranTranslationLandingPage() {
                         href="https://www.youtube.com/@SANA-Som"
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-sky-200/25 bg-[rgba(125,211,252,0.12)] py-3 text-sm font-bold text-sky-100 transition hover:scale-[1.01] hover:bg-[rgba(125,211,252,0.22)]"
+                        className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-white/10 bg-[linear-gradient(135deg,rgba(22,33,62,0.78)_0%,rgba(27,59,111,0.66)_52%,rgba(125,211,252,0.34)_100%)] py-3 text-sm font-bold text-sky-100 transition hover:scale-[1.01] hover:bg-[linear-gradient(135deg,rgba(22,33,62,0.88)_0%,rgba(27,59,111,0.74)_52%,rgba(125,211,252,0.42)_100%)]"
                       >
                         <Sparkles className="h-4 w-4" />
                         Bilow hadda
