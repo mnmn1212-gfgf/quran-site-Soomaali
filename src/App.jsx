@@ -646,7 +646,7 @@ function HeroAudioPlayer({ isMobile }) {
 
         <div className={`relative h-2 w-full flex-1 overflow-visible rounded-full ${FRAME_GLASS_SOFT}`}>
           <div
-            className="absolute inset-y-0 right-0 rounded-full bg-gradient-to-r from-[#1B3B6F] via-[#4FAFE3] to-[#7DD3FC]"
+            className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-[#1B3B6F] via-[#4FAFE3] to-[#7DD3FC]"
             style={{ width: `${progress}%` }}
           />
           <input
@@ -961,7 +961,7 @@ function ProtectedHlsVideoCard({
 
           <div className={`relative h-2 w-full flex-1 overflow-visible rounded-full ${FRAME_GLASS_SOFT}`}>
             <div
-              className="absolute inset-y-0 right-0 rounded-full bg-gradient-to-r from-[#1B3B6F] via-[#4FAFE3] to-[#7DD3FC]"
+              className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-[#1B3B6F] via-[#4FAFE3] to-[#7DD3FC]"
               style={{ width: `${progress}%` }}
             />
             <input
@@ -1030,7 +1030,7 @@ export default function QuranTranslationLandingPage() {
         dir="ltr"
         className="relative min-h-screen overflow-hidden bg-transparent text-white"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(125,211,252,0.18),transparent_28%),radial-gradient(circle_at_78%_18%,rgba(70,140,210,0.18),transparent_22%),radial-gradient(circle_at_18%_82%,rgba(61,118,190,0.14),transparent_24%),radial-gradient(circle_at_50%_50%,rgba(36,74,130,0.16),transparent_34%),linear-gradient(180deg,#0B1220_0%,#16213E_48%,#1B3B6F_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(125,211,252,0.16),transparent_26%),radial-gradient(circle_at_82%_18%,rgba(79,175,227,0.14),transparent_20%),radial-gradient(circle_at_18%_78%,rgba(27,59,111,0.18),transparent_24%),radial-gradient(circle_at_50%_50%,rgba(22,33,62,0.22),transparent_34%),linear-gradient(180deg,#0B1220_0%,#13203B_38%,#16213E_68%,#1B3B6F_100%)]" />
 
         {!isMobile && (
           <>
