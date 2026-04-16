@@ -36,6 +36,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Show dist files
+        run: |
+          echo "------ DIST ------"
+          find dist -maxdepth 2 -type f
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
