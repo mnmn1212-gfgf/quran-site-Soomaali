@@ -1030,7 +1030,7 @@ export default function QuranTranslationLandingPage() {
         dir="ltr"
         className="relative min-h-screen overflow-hidden bg-transparent text-white"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(125,211,252,0.16),transparent_26%),radial-gradient(circle_at_82%_18%,rgba(79,175,227,0.14),transparent_20%),radial-gradient(circle_at_18%_78%,rgba(27,59,111,0.18),transparent_24%),radial-gradient(circle_at_50%_50%,rgba(22,33,62,0.22),transparent_34%),linear-gradient(180deg,#0B1220_0%,#13203B_38%,#16213E_68%,#1B3B6F_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(125,211,252,0.14),transparent_24%),radial-gradient(circle_at_82%_18%,rgba(79,175,227,0.12),transparent_20%),radial-gradient(circle_at_18%_78%,rgba(27,59,111,0.16),transparent_24%),radial-gradient(circle_at_50%_50%,rgba(22,33,62,0.20),transparent_34%),linear-gradient(180deg,#101A30_0%,#16213E_42%,#1B3B6F_100%)]" />
 
         {!isMobile && (
           <>
@@ -1254,16 +1254,16 @@ export default function QuranTranslationLandingPage() {
                       </div>
                     )}
 
-                    <div className="mt-6 grid grid-cols-3 gap-2 text-center sm:mt-8 sm:gap-3">
+                    <div className="mt-6 grid grid-cols-1 gap-3 text-center sm:mt-8 sm:grid-cols-3 sm:gap-3">
                       {heroCards.map((item) => (
                         <div
                           key={item.label}
-                          className={`rounded-2xl border border-white/10 ${CARD_GLASS} p-3 sm:p-4`}
+                          className={`rounded-2xl border border-white/10 ${CARD_GLASS} p-4 sm:p-4`}
                         >
-                          <div className="text-sm font-bold sm:text-lg" style={{ color: ACCENT }}>
+                          <div className="text-xl font-bold leading-8 sm:text-lg" style={{ color: ACCENT }}>
                             {item.value}
                           </div>
-                          <div className="mt-1 text-[11px] text-white/60 sm:text-xs">
+                          <div className="mt-2 text-sm leading-7 text-white/70 sm:mt-1 sm:text-xs sm:leading-5">
                             {item.label}
                           </div>
                         </div>
