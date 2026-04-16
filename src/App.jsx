@@ -59,19 +59,19 @@ const pulseGlow = {
 };
 
 const FRAME_GLASS =
-  "bg-[linear-gradient(135deg,rgba(22,33,62,0.82)_0%,rgba(27,59,111,0.62)_58%,rgba(125,211,252,0.26)_100%)]";
+  "bg-[linear-gradient(135deg,#16213E_0%,#1B3B6F_52%,#7DD3FC_100%)]";
 const FRAME_GLASS_SOFT =
-  "bg-[linear-gradient(135deg,rgba(22,33,62,0.72)_0%,rgba(27,59,111,0.54)_58%,rgba(125,211,252,0.24)_100%)]";
+  "bg-[linear-gradient(135deg,rgba(22,33,62,0.94)_0%,rgba(27,59,111,0.86)_52%,rgba(125,211,252,0.58)_100%)]";
 const CARD_GLASS =
-  "bg-[linear-gradient(135deg,rgba(22,33,62,0.54)_0%,rgba(27,59,111,0.38)_60%,rgba(125,211,252,0.18)_100%)]";
+  "bg-[linear-gradient(135deg,rgba(22,33,62,0.44)_0%,rgba(27,59,111,0.34)_52%,rgba(125,211,252,0.22)_100%)]";
 const HEADER_GLASS =
-  "bg-[linear-gradient(135deg,rgba(54,76,110,0.78)_0%,rgba(63,91,132,0.72)_56%,rgba(87,131,178,0.58)_100%)]";
+  "bg-[linear-gradient(135deg,rgba(22,33,62,0.88)_0%,rgba(27,59,111,0.78)_52%,rgba(125,211,252,0.42)_100%)]";
 const DARK_PANEL =
-  "bg-[linear-gradient(135deg,rgba(19,34,60,0.97)_0%,rgba(27,59,111,0.74)_100%)]";
+  "bg-[linear-gradient(135deg,rgba(15,28,51,0.98)_0%,rgba(22,33,62,0.92)_38%,rgba(27,59,111,0.78)_100%)]";
 const DARK_PANEL_SOFT =
-  "bg-[linear-gradient(135deg,rgba(11,18,32,0.56)_0%,rgba(22,33,62,0.36)_100%)]";
+  "bg-[linear-gradient(135deg,rgba(11,18,32,0.62)_0%,rgba(22,33,62,0.42)_100%)]";
 const SMALL_GLASS =
-  "border border-white/10 bg-[linear-gradient(135deg,rgba(22,33,62,0.32)_0%,rgba(27,59,111,0.22)_58%,rgba(125,211,252,0.14)_100%)] backdrop-blur-xl shadow-[0_10px_26px_rgba(7,14,30,0.22)]";
+  "border border-white/10 bg-[linear-gradient(135deg,rgba(22,33,62,0.24)_0%,rgba(27,59,111,0.18)_52%,rgba(125,211,252,0.12)_100%)] backdrop-blur-xl shadow-[0_10px_26px_rgba(7,14,30,0.22)]";
 
 const containerClass =
   "relative z-10 mx-auto w-full max-w-[1680px] px-4 sm:px-6 lg:px-10 xl:px-14";
@@ -715,7 +715,7 @@ function IdentityCard({ icon: Icon, title, text, large = false, isMobile }) {
   return (
     <motion.div
       whileHover={isMobile ? {} : { y: -6, scale: 1.01 }}
-      className={`${softCard} h-full p-4 sm:p-5`}
+      className={`rounded-[2rem] border border-white/10 ${FRAME_GLASS} h-full p-4 sm:p-5 shadow-[0_12px_30px_rgba(0,0,0,0.16)]`}
     >
       <div className={`h-full rounded-[1.5rem] border border-white/10 ${CARD_GLASS} p-4`}>
         <div className={`flex items-center gap-3 rounded-2xl border border-white/10 ${HEADER_GLASS} backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] px-4 py-3`}>
